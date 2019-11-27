@@ -9,8 +9,10 @@ branches:
     - master
 script:
   - npm test -- --coverage
-  - npm run code:clean
+  - npm run code:lint
   - npm run build:prod
+install:
+  - npm install --no-save
 deploy:
   provider: pages
   skip_cleanup: true
