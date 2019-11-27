@@ -7,12 +7,12 @@ cache:
 branches:
   only:
     - master
+install:
+  - npm install --no-save
 script:
   - npm test -- --coverage
   - npm run code:lint
   - npm run build:prod
-install:
-  - npm install --no-save
 deploy:
   provider: pages
   skip_cleanup: true
