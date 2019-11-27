@@ -1,6 +1,6 @@
 import Transport from './Transport';
 
-export const DEFAULT_SHIP = {
+const DEFAULT_SHIP = {
   id: 'xxxxx-qqqqq-aaaaa',
   model: 'Combo',
   name: 'JS Band Ship',

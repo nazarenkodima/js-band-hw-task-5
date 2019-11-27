@@ -17,7 +17,7 @@ export default class Truck extends Transport {
     producedYear = DEFAULT_TRUCK.producedYear,
     capacity = DEFAULT_TRUCK.capacity,
     averageSpeed = DEFAULT_TRUCK.averageSpeed,
-    licensePlate = DEFAULT_TRUCK.averageSpeed,
+    licensePlate = DEFAULT_TRUCK.licensePlate,
     typeOfGas = DEFAULT_TRUCK.typeOfGas,
   ) {
     super(id, model, producedYear, capacity, averageSpeed);

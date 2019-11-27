@@ -1,3 +1,4 @@
 serviceWorker.*
 /build/**
 /coverage/**
+/source/models/__tests__/**
