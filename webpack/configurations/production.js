@@ -11,6 +11,7 @@ import {
 
 // Instruments
 import merge from 'webpack-merge';
+import {build} from '../paths';
 
 export const generateProductionConfiguration = () =>
     merge(
@@ -28,6 +29,8 @@ export const generateProductionConfiguration = () =>
             mode:   'production',
             output: {
                 filename: 'js/[name].[chunkhash:5].js',
+                path:       build,
+                publicPath: './',
             },
             devtool:      'source-map',
             optimization: {
