@@ -30,18 +30,18 @@ export default class TransportList {
     let ship;
 
     ship = TransportFactory.createTransport(
-        'ship',
-        id,
-        model,
-        name,
-        producedYear,
-        capacity,
-        averageSpeed,
-        countOfTeam,
-    )
+      'ship',
+      id,
+      model,
+      name,
+      producedYear,
+      capacity,
+      averageSpeed,
+      countOfTeam,
+    );
 
     shipInputs.forEach(input => {
-      if(!input.value.trim()) ship = TransportFactory.createTransport('ship')
+      if (!input.value.trim()) ship = TransportFactory.createTransport('ship');
     });
 
     console.log(`Average speed: ${ship.showAverageSpeed()}`);
@@ -86,18 +86,18 @@ export default class TransportList {
     let truck;
 
     truck = TransportFactory.createTransport(
-        'truck',
-        id,
-        model,
-        producedYear,
-        capacity,
-        averageSpeed,
-        licensePlate,
-        typeOfGas,
-    )
+      'truck',
+      id,
+      model,
+      producedYear,
+      capacity,
+      averageSpeed,
+      licensePlate,
+      typeOfGas,
+    );
 
     truckInputs.forEach(input => {
-      if(!input.value.trim() ) truck = TransportFactory.createTransport('truck')
+      if (!input.value.trim()) truck = TransportFactory.createTransport('truck');
     });
 
     console.log(`Average speed: ${truck.showAverageSpeed()}`);

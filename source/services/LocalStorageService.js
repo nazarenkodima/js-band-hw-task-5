@@ -30,8 +30,6 @@ export default class LocalStorageService {
     if (localStorage.getItem(`${this.localStoragePrefix}${key}`) !== null) {
       localStorageKey = localStorage.getItem(`${this.localStoragePrefix}${key}`);
       localStorageKey = JSON.parse(localStorageKey);
-
-
     }
     return localStorageKey;
   }
