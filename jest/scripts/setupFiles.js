@@ -1,7 +1,10 @@
 // Mocks
-
+import { LocalStorage }  from './mocks/localStorage';
 
 const pound = 2.2046226218;
+
+const prefix = 'JS-Band-';
+
 
 const DEFAULT_TRUCK = {
     id: 'smrta-asdad-deead',
@@ -23,11 +26,19 @@ const DEFAULT_SHIP = {
     countOfTeam: '83',
 };
 
+const DEFAULT_COST = {
+    model: 'MAN',
+    costByKilogram: 42,
+    costByDistance: 24
+}
+
 
 global.__ = {
     pound,
     DEFAULT_TRUCK,
-    DEFAULT_SHIP
+    DEFAULT_SHIP,
+    DEFAULT_COST,
+    prefix,
 };
 
-
+global.localStore = new LocalStorage();
