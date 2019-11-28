@@ -485,7 +485,7 @@ function (_Transport) {
     var producedYear = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : DEFAULT_TRUCK.producedYear;
     var capacity = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : DEFAULT_TRUCK.capacity;
     var averageSpeed = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : DEFAULT_TRUCK.averageSpeed;
-    var licensePlate = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : DEFAULT_TRUCK.averageSpeed;
+    var licensePlate = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : DEFAULT_TRUCK.licensePlate;
     var typeOfGas = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : DEFAULT_TRUCK.typeOfGas;
 
     _classCallCheck(this, Truck);
@@ -518,7 +518,7 @@ exports.default = Truck;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.DEFAULT_SHIP = void 0;
+exports.default = void 0;
 
 var _Transport2 = _interopRequireDefault(__webpack_require__(0));
 
@@ -551,7 +551,6 @@ var DEFAULT_SHIP = {
   averageSpeed: '20',
   countOfTeam: '83'
 };
-exports.DEFAULT_SHIP = DEFAULT_SHIP;
 
 var Ship =
 /*#__PURE__*/
@@ -704,4 +703,4 @@ exports.default = Cost;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=source.652cc.js.map
+//# sourceMappingURL=source.5d9f3.js.map
