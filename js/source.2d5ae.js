@@ -175,11 +175,7 @@ function () {
   _createClass(LocalStorageService, [{
     key: "init",
     value: function init(key) {
-      if (localStorage.getItem("".concat(this.localStoragePrefix).concat(key)) === null) {
-        return true;
-      }
-
-      return false;
+      return localStorage.getItem("".concat(this.localStoragePrefix).concat(key)) === null;
     }
   }, {
     key: "getToken",
@@ -703,4 +699,4 @@ exports.default = Cost;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=source.5d9f3.js.map
+//# sourceMappingURL=source.2d5ae.js.map
