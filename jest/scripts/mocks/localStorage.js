@@ -1,8 +1,10 @@
 export class LocalStorage {
     constructor () {
         this.storage = {};
+
+        this.localStoragePrefix = 'JS-Band-';
     }
-    
+
 
     getItem = jest.fn((key) => {
         return this.storage[key] || null;
