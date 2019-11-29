@@ -18,10 +18,7 @@ export default class LocalStorageService {
   }
 
   init(key) {
-    if (localStorage.getItem(`${this.localStoragePrefix}${key}`) === null) {
-      return true;
-    }
-    return false;
+    return localStorage.getItem(`${this.localStoragePrefix}${key}`) === null;
   }
 
   getToken(key) {

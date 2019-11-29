@@ -32,6 +32,12 @@ const DEFAULT_COST = {
     costByDistance: 24
 }
 
+const localStore = new LocalStorage();
+
+const localStorageMock = {
+    saveToken: jest.fn(),
+    getToken: jest.fn()
+};
 
 global.__ = {
     pound,
@@ -39,6 +45,7 @@ global.__ = {
     DEFAULT_SHIP,
     DEFAULT_COST,
     prefix,
+    localStore,
+    localStorageMock
 };
 
-global.localStore = new LocalStorage();
